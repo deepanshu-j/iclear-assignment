@@ -1,0 +1,20 @@
+/* underline stroke hover effect from left to right*/
+a.fromLeft {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+}
+a.fromLeft:after {
+	display: block;
+	content: '';
+	border-bottom: solid 2px black;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+a.fromLeft:hover:after {
+	transform: scaleX(1);
+}
+a.fromLeft:after {
+	transform-origin: 0% 50%;
+}

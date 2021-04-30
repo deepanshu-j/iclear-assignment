@@ -50,13 +50,15 @@ body {
 	flex: 0.5;
 	justify-content: space-evenly;
 	align-items: center;
-}
-.navbar__right > div {
 	font-weight: 600;
 	letter-spacing: 0px;
 	color: #000000;
 	opacity: 1;
 }
+
+/* .navbar__right > div {
+	
+} */
 
 .home__center {
 	text-align: center;
