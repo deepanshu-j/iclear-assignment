@@ -29,12 +29,27 @@
 
                 <a class="fromLeft">Home</a>
                 <a class="fromLeft" href="#">Work</a>
-                <a class="fromLeft" href="#">Serviceᐯ</a>
+
+
+                <a class="fromLeft container2" href="#" onclick="myFunction2(this)">Services</a>
+
+                <!-- PENDING -->
+                <!-- <div class="bar12">
+                    sublink1
+                </div> -->
+
+
                 <a class="fromLeft" href="#">About</a>
                 <a class="fromLeft" href="#">Startups</a>
                 <a class="fromLeft" href="#">Lets Talk</a>
             </nav>
-            <nav class="hamburger">--</nav>
+            <nav class="hamburger">
+
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
         </nav>
         <div class="home__center">
             <h1>We are a Modern IT Company</h1>
@@ -224,9 +239,19 @@
         </div>
         <div style="text-align: center;">Made with <span style="color: red;">❤ </span>by Designer</div>
     </footer>
-</body>
-<script>
 
-</script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        function myFunction2(x) {
+            x.classList.toggle("change2");
+        }
+
+    </script>
+
+
+</body>
+
 
 </html>
