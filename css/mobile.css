@@ -1,10 +1,11 @@
-/* This Style sheet follows BEM convention for class naming */
-body {
-	margin: 0px;
-	font-family: 'Poppins', sans-serif;
-}
-@media screen and (min-width: 801px) {
-	/* Styles for The first Component (class="Home") of the page Starts here    */
+@media screen and (max-width: 800px) {
+	/* Whichever class has  an additional class of lg__screen, it wont be displayed in mobile view */
+	.lg__screen {
+		display: none;
+	}
+	body {
+		/* background-color: blueviolet; */
+	}
 
 	.home {
 		background-image: url("/assests/Group\ 1020.png");
@@ -45,7 +46,8 @@ body {
 		opacity: 1;
 	}
 	.navbar__right {
-		display: flex;
+		display: none;
+		/* display: flex; */
 		flex: 0.5;
 		justify-content: space-evenly;
 		align-items: center;
@@ -55,19 +57,28 @@ body {
 		opacity: 1;
 	}
 
-	.hamburger {
-		display: none;
-	}
 	/* .navbar__right > div {
 	
 } */
+	.hamburger {
+		display: flex;
+		flex: 0.5;
+		padding: 3px;
+		margin-right: 3vw;
+		flex-direction: row-reverse;
+	}
+
+	/* Styles for home class members start here */
 
 	.home__center {
 		text-align: center;
 		color: white;
 
 		/* background-color: red; */
-		padding: 80px;
+
+		/* This make the text good to go for mobiles  */
+		/* Nudge the value if not going good */
+		padding: 10vw;
 		padding-bottom: 0px;
 
 		margin: 50px;
@@ -77,55 +88,58 @@ body {
 	.home__centerParagraph {
 		display: grid;
 		color: white;
-		grid-template-columns: 1fr 3fr 1fr;
+		font-size: smaller;
+		grid-template-columns: 1fr 10fr 1fr;
 	}
 
 	.home__scrolldownText {
+		display: none;
 		font-weight: lighter;
 		letter-spacing: 0px;
 		color: rgb(206, 202, 202);
 	}
 	.home__scrolldownSvg {
+		display: none;
 		text-align: center;
 	}
 
 	/* Design for Engineering Impact Component of the Page Starts here */
 
-	.impact {
-		display: grid;
-		width: 100vw;
-		height: 100vh;
-		grid-template-columns: 1fr 1fr;
-	}
 	.impact__text {
 		display: flexbox;
 		align-items: center;
-		padding: 100px;
+		padding: 5vw 25vw 5vw 5vw;
 	}
 	.impact__textHeader {
 		font-weight: bold;
 		font-size: 2rem;
 	}
 	.impact__img > img {
-		width: 40vw;
-		padding: 50px;
+		width: 90vw;
+		padding: 2vw 5vw 2vw 5vw;
 	}
+
+	/* Styles for Leadership section starts here */
+
 	.leadership__header {
 		font: normal normal 600 30px/41px Poppins;
 		/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-		padding: 0px 80px 10px 80px;
+		text-align: center;
 		font-weight: 900;
 		letter-spacing: 0px;
 	}
 	.leadership__cards {
-		display: grid;
-		padding: 0px 80px 0px 80px;
-		grid-template-columns: 1fr 1fr 1fr;
+		width: 90vw;
+		padding: 2vw 0vw 2vw 0vw;
+		margin-bottom: 5vw;
 	}
-
+	.leadership__card {
+		padding: 5vw 25vw 5vw 5vw;
+		margin-bottom: 7vw;
+		box-shadow: 0px 3px 6px #00000012;
+	}
 	.leadership__card > img {
-		width: 27vw;
-		padding: 1vw;
+		width: 80vw;
 	}
 	.leadership__cardName {
 		letter-spacing: 0px;
@@ -141,9 +155,9 @@ body {
 		width: 100vw;
 	}
 	.people__header {
-		margin: 60px 80px 30px 0px;
-		padding: 0px 80px 0px;
+		text-align: center;
 		font: normal normal 600 20px/31px Poppins;
+		margin: 5vw 0 5vw 0;
 	}
 	.people__imgs {
 		width: 100vw;
@@ -175,8 +189,6 @@ body {
 
 	.contact {
 		margin: 15vh 15vh 0 8vh;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
 	}
 	.contact__left {
 		margin: 60px;
@@ -186,10 +198,11 @@ body {
 
 	.contact__leftHeader {
 		font-weight: 700;
+		color: #0c66b4;
 		font-size: x-large;
 	}
 	.contact__right > img {
-		width: 30vw;
+		width: 70vw;
 	}
 
 	.leftButton {
@@ -207,26 +220,16 @@ body {
 	/* Styles for Footer class starts here */
 
 	.footer {
-		display: grid;
+		font-size: large;
 		background-color: black;
 		color: white;
-		grid-template-columns: 1fr 1fr;
-		padding: 10vh 20vh 10vh 40vh;
-	}
-	.footer__left {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		padding: 10vh 5vh 0vh 5vh;
 	}
 
-	.footer__rightBottomBottom {
-		margin: 4vh;
-		display: flex;
-		justify-content: space-between;
+	.footer__rightTop {
+		padding: 5vw 0 5vw 0;
 	}
-
-	/* Whichever class has  an additional class of mobile, it wont be displayed in large__screen view */
-	.mobile {
-		display: none;
+	.footer__leftBottom {
+		padding: 5vw 0 0 0;
 	}
 }

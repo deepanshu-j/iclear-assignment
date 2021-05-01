@@ -13,6 +13,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
 </head>
 
@@ -28,11 +29,12 @@
 
                 <a class="fromLeft">Home</a>
                 <a class="fromLeft" href="#">Work</a>
-                <a class="fromLeft" href="#">Services</a>
+                <a class="fromLeft" href="#">Serviceᐯ</a>
                 <a class="fromLeft" href="#">About</a>
                 <a class="fromLeft" href="#">Startups</a>
                 <a class="fromLeft" href="#">Lets Talk</a>
             </nav>
+            <nav class="hamburger">--</nav>
         </nav>
         <div class="home__center">
             <h1>We are a Modern IT Company</h1>
@@ -127,18 +129,26 @@
                     find a suitable time for a meeting.</div>
             </div>
 
+            <!-- This is for mobile view in large size its not displayed -->
+            <!-- Can use Grid/Flexbox to change the order but no need here -->
+            <!-- Additional Class mobile means it will only be displayed in mobile view -->
+            <div class="contact__right mobile">
+                <img src="/assests/Group 69.svg" alt="Group 69" />
+            </div>
+
             <div class="contact__leftButtons">
-                <button class="leftButton">Your Email or phone</button>
+                <button type="button" class="leftButton">Your Email or phone</button>
                 <button type="button" class="rightButton">
                     Contact me ➝
                 </button>
             </div>
         </div>
-        <div class="contact__right">
+        <!-- Additional class lg__screen means it will only be displayed in large screen view -->
+        <div class="contact__right lg__screen">
             <img src="/assests/Group 69.svg" alt="Group 69" />
         </div>
     </section>
-    <section class="footer">
+    <footer class="footer lg__screen">
 
         <div class="footer__left">
 
@@ -146,6 +156,7 @@
             <div class="footer__leftBottom">
                 Follow us at
                 <br />
+
                 <div>
                     <img style="padding:10px;" src="/assests/Icon awesome-facebook-square.svg" alt="Image 2" />
                     <img style="padding:10px;" src="/assests/Icon awesome-linkedin.svg" alt="Image 2" />
@@ -170,8 +181,49 @@
 
         </div>
         </div>
+        <hr style="height:1px;width:180%;left:0px;color: white;background-color: white;">
 
-    </section>
+        <br />
+        <div style="text-align: center;">Made with <span style="color: red;">❤ </span>by Designer
+        </div>
+
+    </footer>
+
+    <footer class="footer mobile">
+
+
+        <div class="footer__leftTop">The IT Company</div>
+        <div class="footer__rightTop"><b>Get In Touch </b><br /> Email@Email.com <br /> 9560289565</div>
+        <div class="footer__rightBottom">
+            <div><b>Explore</b></div>
+            <div class="footer__rightBottomBottom">
+                <div>Home </div>
+                <div>Work</div>
+                <div>Services</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+
+        </div>
+        <div class="footer__leftBottom">
+            <b>Follow us at</b>
+            <br />
+
+            <div>
+                <img style="padding:10px;" src="/assests/Icon awesome-facebook-square.svg" alt="Image 2" />
+                <img style="padding:10px;" src="/assests/Icon awesome-linkedin.svg" alt="Image 2" />
+                <img style="padding:10px;" src="/assests/Icon awesome-twitter.svg" alt="Image 2" />
+                <img style="padding:10px;" src="/assests/Icon feather-instagram.svg" alt="Image 2" />
+            </div>
+        </div>
+
+        </div>
+        <br />
+        <hr style="height:1px;width:100%;left:0px;position:absolute;color: white;background-color: white;">
+        <br />
+        </div>
+        <div style="text-align: center;">Made with <span style="color: red;">❤ </span>by Designer</div>
+    </footer>
 </body>
 <script>
 
